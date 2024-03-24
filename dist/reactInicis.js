@@ -186,12 +186,17 @@ var ReactInicis = function ReactInicis(_ref) {
     readOnly: true,
     name: "currency",
     value: "WON"
-  }), payData.payStatus === 2 && /*#__PURE__*/_react.default.createElement("input", {
+  }), /*#__PURE__*/_react.default.createElement("input", {
     type: "hidden",
     readOnly: true,
     name: "acceptmethod",
-    value: "HPP(".concat(payData.telStatus, ")")
+    value: payData.acceptmethod
   }), /*#__PURE__*/_react.default.createElement("input", {
+    type: "hidden",
+    readOnly: true,
+    name: "offerPeriod",
+    value: payData.offerPeriod
+  }),/*#__PURE__*/_react.default.createElement("input", {
     type: "hidden",
     readOnly: true,
     name: "returnUrl",
